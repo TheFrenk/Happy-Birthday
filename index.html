@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Happy Birthday!</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <style>
+        [data-hidden] {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <main data-hidden>
+        <div class="title">
+            <h1 class="title__text">16 лет получается</h1>
+        </div>
+        <h1 class="title__leading">Всего наилучшего!</h1>
+        <p id="status">
+            Угости себя кусочками виртуального торта!
+        </p>
+        
+        <div class="scene">
+        </div>
+    </main>
+    <div id="scene" class="scene">
+        <div class="plane">
+            <div class="plate">
+                <img src="content/mp-logo-slogan.png" alt="" class="plate__logo">                
+                <svg class="plate__top" viewBox="-300 -300 600 600" style="width: 100%; height: 100%;">
+                    <polygon points="0,300 150,260 260,150 300,0 260,-150 150,-260 0,-300 -150,-260 -260,-150 -300,0 -260,150 -150,260" />
+                </svg>
+                <img class="plate__crumbs" src="content/crumbs.png">
+                <div class="plate__note">
+                    <p>Лучше не придумал :) Надеюсь понравилось</p>
+                </div>
+            </div>
+            <div class="cake">
+            </div>
+            <div class="bday-card">
+                <div class="bday-card__page__front">
+                    <div class="bday-card__image">
+                        <img src="content/card-front.webp" alt="">
+                    </div>
+                    <div class="bday-card__back"></div>
+                </div>
+                <div class="bday-card__page">
+                    <div class="bday-card__text">
+                        <div>
+                            С днем рождения, хомячок! Желаю крепкого здоровья, удачи, благополучия, добра, радости, любви, счастья, хорошего настроения, улыбок, ярких впечатлений
+                        </div>
+                        <div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="bday-card__back"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="credits">
+        <small>By Frank</small>
+    </div>
+
+    <div data-model="slice" class="cake__slice">
+        <div class="cake__slice__side"></div>
+        <div class="cake__slice__side"></div>
+        <svg class="cake__slice__top" height="158">
+            <polygon points="0,79 290,0 290,158" />
+        </svg>
+        <div class="cake__slice__behind"></div>
+    </div>
+
+    <svg data-model="slice-shadow" class="cake__slice__shadow" height="158">
+        <polygon points="0,79 290,0 290,158" />
+    </svg>
+</body>
+
+</html>
